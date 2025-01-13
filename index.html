@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .answer {
+            margin-bottom: 20px;
+            padding-left: 10px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Interview Questions and Answers</h1>
+        <div id="qa-container"></div>
+    </div>
+
+    <script>
+        const questionsAndAnswers = [
+        {
+            question: "Tell me about yourself (Introduction).",
+            answer: "I am Mohammed Shaheen KP, a software developer with one year of experience specializing in Python and the MERN stack. I have a solid foundation in computer science and practical experience in developing web applications using frameworks like Django and Flask. I am passionate about creating efficient, scalable, and user-friendly solutions, and I enjoy collaborating with teams to bring innovative ideas to life. While I have a small stuttering issue that is genetic, I am fully confident in my ability to communicate effectively and speak with clarity and confidence."
+
+
+        },
+        {
+            question: "What do you know about Python Development?",
+            answer: "Python development involves building scalable and efficient applications, both for the web and general-purpose automation. I have hands-on experience with frameworks like Django for robust web applications and Flask for lightweight, flexible APIs. I am also proficient in integrating databases, handling ORM with Django, and creating RESTful APIs."
+        },
+        {
+            question: "Why did you select Python?",
+            answer: "I chose Python because of its simplicity, versatility, and extensive community support. It allows me to focus on problem-solving without getting bogged down by complex syntax. Python’s frameworks like Django and Flask make web development seamless, while libraries like NumPy and Pandas simplify data analysis."
+        },
+        {
+            question: "Why do you want to work with us?",
+            answer: "I see immense potential for growth at your company, given your focus on cutting-edge projects and a collaborative environment. Your commitment to fostering talent aligns with my aspiration to excel in Python development."
+        },
+        {
+            question: "If you were assigned multiple projects at once with the same deadline, how would you deal with them?",
+            answer: "I would start by understanding the priorities and scope of each project. Then, I’d break each into smaller tasks and allocate time based on urgency and complexity. By maintaining clear communication with stakeholders and leveraging tools like Trello or Asana, I can manage tasks effectively."
+        },
+        {
+            question: "On a scale of 1 to 10, how much do you rate your skills in Django, Flask, and web development?",
+            answer: "I would rate myself 8 out of 10. I have hands-on experience with Django for building feature-rich applications and Flask for lightweight APIs. While I am confident in my skills, I am always eager to learn and improve further."
+        },
+        {
+            question: "On a scale of 1 to 10, how much do you rate your skills in overall Python development?",
+            answer: "I would rate myself 8.5 out of 10. I have a strong command of Python’s core concepts, OOP principles, and libraries, but I constantly strive to refine my skills and keep up with the latest advancements."
+        },
+        {
+            question: "Are you familiar with OOP concepts, and how much do you rate yourself?",
+            answer: "Yes, I am proficient in OOP concepts like inheritance, polymorphism, encapsulation, and abstraction. I would rate myself 9 out of 10."
+        },
+        {
+            question: "Tell me about a project that you worked on and feel very proud of.",
+            answer: "I developed a quiz application called 'Quix Hub,' which uses Python and Django for backend functionality. The project challenged me to design a responsive UI and implement robust CRUD operations."
+        },
+        {
+            question: "Why did you decide to make the career change?",
+            answer: "My decision was driven by my passion for Python development and my desire to work on impactful projects. Transitioning to this field has allowed me to apply my problem-solving skills to real-world challenges."
+        },
+        {
+            question: "Do you have a career gap, and if yes, explain your career gap?",
+            answer: "I took a brief career break to focus on upskilling and working on personal projects. During this time, I enhanced my expertise in Python, Django, and Flask."
+        },
+        {
+            question: "Why should we hire you?",
+            answer: "My technical skills in Python development, coupled with my problem-solving ability and teamwork, make me a strong candidate. I have a proven track record of delivering scalable applications."
+        },
+        {
+            question: "How much salary are you expecting from this position?",
+            answer: "I am expecting a salary in the range of 2.5 to 3 LPA, which I believe is fair considering my skills and the responsibilities of this role."
+        },
+        {
+            question: "Are you okay with relocating?",
+            answer: "Yes, I am open to relocating. I see it as an opportunity to immerse myself in a new environment and contribute fully to the organization."
+        },
+        {
+            question: "Do you have any questions for us?",
+            answer: "1. What does a typical day look like for a Python developer in your organization? 2. How does the company support the professional growth of its employees? 3. Can you tell me about the team I would be working with?"
+        }
+    ];
+        const qaContainer = document.getElementById("qa-container");
+
+        questionsAndAnswers.forEach(({ question, answer }) => {
+            const questionElement = document.createElement("div");
+            questionElement.classList.add("question");
+            questionElement.textContent = question;
+
+            const answerElement = document.createElement("div");
+            answerElement.classList.add("answer");
+            answerElement.textContent = answer;
+
+            qaContainer.appendChild(questionElement);
+            qaContainer.appendChild(answerElement);
+        });
+    </script>
+</body>
+</html>
